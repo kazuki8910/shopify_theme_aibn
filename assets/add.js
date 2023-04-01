@@ -28,10 +28,10 @@ $(function(){
 
   // どこポイのポイント入力時、価格を引く
   {
-    console.log('1');
+    console.log($point_btn);
     const $point_btn = $('#dokopoiSubmit');
     $point_btn.click(function(){
-      console.log('1');
+      console.log($point_btn);
     });
     
   }
