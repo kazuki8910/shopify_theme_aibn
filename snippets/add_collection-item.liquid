@@ -1,0 +1,8 @@
+{%- assign collection_image = block.settings.image | default: collection.image | default: collection.products.first.featured_image -%}
+
+<a href="{{ block.settings.collection.url }}" {{ block.shopify_attributes }} class="add_CollectionItem">
+  <div class="add_CollectionItem__img">
+    <img class="" loading="lazy" src="{{ collection_image | img_url: "master" }}" alt="">
+  </div>
+  <h3 class="add_CollectionItem__title">{{ block.settings.title }}</h3>
+</a>

@@ -1,0 +1,119 @@
+.add_CollectionList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .add_CollectionList {
+    padding: 30px 12px;
+  }
+}
+
+.add_CollectionItem {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: calc(25% - 30px);
+  margin-bottom: 40px;
+}
+
+.add_CollectionItem__img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 5px;
+  height: 12.25vw;
+}
+
+.add_CollectionItem__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.add_CollectionItem__title {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
+  text-align: center;
+  font-family: Lato;
+  color: #1c1b1b;
+}
+
+@media screen and (max-width: 1000px) {
+  .add_CollectionItem {
+    width: calc(50% - 6px);
+    margin-bottom: 30px;
+  }
+  .add_CollectionItem__img {
+    height: 27.84vw;
+  }
+  .add_CollectionItem__title {
+    font-size: 12px;
+  }
+}
+
+#dokopoiCartBody {
+  padding-top: 15px !important;
+  padding-bottom: 30px !important;
+}
+
+.dokopoiFieldGroup {
+  display: block !important;
+}
+
+#dokopoiMainLabel {
+  padding-bottom: 5px !important;
+}
+
+#dokopoiPointField {
+  padding: 8px 10px !important;
+  font-size: 12px !important;
+}
+
+#dokopoiPointField::-webkit-input-placeholder {
+  color: #dddddd;
+}
+
+#dokopoiPointField:-ms-input-placeholder {
+  color: #dddddd;
+}
+
+#dokopoiPointField::-ms-input-placeholder {
+  color: #dddddd;
+}
+
+#dokopoiPointField::placeholder {
+  color: #dddddd;
+}
+
+#dokopoiSubmit,
+#dokopoiReset {
+  max-width: 200px !important;
+  font-size: 12px !important;
+  padding: 8px 10px !important;
+  background: #1C1B1B !important;
+}
+
+.order-history {
+  font-size: 14px !important;
+}
+
+.order-history tr {
+  padding: 15px !important;
+}
+
+.order-history {
+  font-size: 14px !important;
+}
+
+.order-history tr {
+  padding: 15px !important;
+}
+/*# sourceMappingURL=add.css.map */

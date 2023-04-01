@@ -1,0 +1,22 @@
+{% comment %}画面右下固定のLINE登録ボタン{% endcomment %}
+
+{% if settings.line_icon_display %}
+  <a href="{{settings.social_line_link}}" class="line_at_img">
+    <img src="{{ settings.line_icon | img_url: '2000x2000' }}" alt="line友達登録">
+  </a>
+{% endif %}
+
+<style>
+.line_at_img{
+  position: fixed;
+  bottom: 15px;
+  right:  15px;
+  height: 60px;
+  z-index: 500;
+}
+.line_at_img img{
+  width: auto;
+  height: 100%;
+  border-radius: 10px;
+}
+</style>

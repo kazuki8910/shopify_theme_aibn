@@ -1,0 +1,118 @@
+//////////////////
+//
+// ブランド表示
+//
+//////////////////
+.add_CollectionList{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 30px 50px;
+
+  @media screen and (max-width:1000px){
+    padding: 30px 12px;
+  }
+}
+
+.add_CollectionItem {
+  box-sizing: border-box;
+  width: calc(25% - 30px);
+  margin-bottom: 40px;
+
+  &__img{
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    height: 12.25vw;
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__title{
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: center;
+    font-family: Lato;
+    color: #1c1b1b;
+  }
+
+  
+  @media screen and (max-width:1000px){
+    width: calc(50% - 6px);
+    margin-bottom: 30px;
+
+    &__img{
+      height: 27.84vw;
+    }    
+
+    &__title{
+      font-size: 12px;
+    }
+  }
+}
+
+//////////////////
+//
+// END：ブランド表示
+//
+//////////////////
+
+
+
+//////////////////
+//
+// どこポイ
+//
+//////////////////
+#dokopoiCartBody{
+  padding-top: 15px !important;
+  padding-bottom: 30px !important;
+}
+
+.dokopoiFieldGroup{
+  display: block !important;
+}
+
+#dokopoiMainLabel{
+  padding-bottom: 5px !important;
+}
+
+#dokopoiPointField{
+  padding: 8px 10px !important;
+  font-size: 12px !important;
+}
+#dokopoiPointField::placeholder{
+  color: #dddddd;
+}
+
+#dokopoiSubmit,
+#dokopoiReset{
+  max-width: 200px !important;
+  font-size: 12px !important;
+  padding: 8px 10px !important;
+  background: #1C1B1B !important;
+}
+
+.order-history{
+  font-size: 14px !important;
+}
+
+.order-history tr{
+  padding: 15px !important;
+}
+
+.order-history{
+  font-size: 14px !important;
+}
+
+.order-history tr{
+  padding: 15px !important;
+}
+//////////////////
+//
+// END：どこポイ
+//
+//////////////////
