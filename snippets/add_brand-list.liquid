@@ -1,0 +1,14 @@
+{%- for brands in shop.metaobjects.brands.values -%}
+  {%- for brand in brands.collections.value -%}
+    <a href="{{ brand.url }}" class="add_CollectionItem">
+      <div class="add_CollectionItem__img">
+        <img
+          class=""
+          loading="lazy"
+          src="{{ brand.image | img_url: 'large' }}"
+          alt="">
+      </div>
+      <h3 class="add_CollectionItem__title">{{ brand.metafields.custom.brand_name }}</h3>
+    </a>
+  {% endfor %}
+{%- endfor -%}
