@@ -1,8 +1,132 @@
 //////////////////
-//
-// ブランド表示
-//
+// 設定
 //////////////////
+
+// タブレット表示
+@mixin tab {
+  @media screen and (max-width:1139px){
+    @content;
+  }
+}
+
+//////////////////
+// END：設定
+//////////////////
+
+
+
+
+
+//////////////////
+// ヘッダーメニュー
+//////////////////
+
+.add_header_sp{
+  display: none;
+}
+
+@include tab{
+  .add_header{
+    // PC用のヘッダー非表示、スマホ用のヘッダー表示
+    &_pc{
+      display: none;
+    }
+    &_sp{
+      display: block;
+      background: #ffffff;
+    }
+
+    // 上部
+    &_top{
+      padding: 10px 10px 10px 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &_logo{
+      width: 80px;
+      margin-bottom: 0;
+    }
+
+    &_nav{
+      display: flex;
+      align-items: center;
+
+      &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 100%;
+        position: relative;
+
+        & span{
+          display: block;
+          margin: 0 auto;
+        }
+
+        & svg{
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &__cartdot{
+        top: 17px;
+        right: 6px;
+      }
+    }
+
+    // 下部
+    &_btm{
+      border-top: 1px solid #DDDDDD;
+      border-bottom: 1px solid #DDDDDD;
+      display: flex;
+    }
+
+    &_btn{
+      display: block;
+      width: 50%;
+      text-align: center;
+      padding: 10px 0;
+      font-family: Lato;
+      color: #000;
+      font-size: 15px;
+      position: relative;
+
+      &_first{
+        border-right: 2px solid #dddddd;
+      }
+
+      &::after{
+        content: "";
+        position: absolute;
+        border-top: 10px solid #dddddd;
+        border-right: 6px solid transparent;
+        border-left: 6px solid transparent;
+        height: 0;
+        width: 0;
+        top: 50%;
+        right: 25px;
+        transform: translateY(-50%);
+      }
+    }
+
+  }
+}
+
+//////////////////
+// END：ヘッダーメニュー
+//////////////////
+
+
+
+
+
+//////////////////
+// ブランド表示
+//////////////////
+
 .add_CollectionList{
   display: flex;
   justify-content: space-between;
@@ -12,6 +136,10 @@
 
   @media screen and (max-width:1000px){
     padding: 30px 12px;
+    
+    &_header{
+      padding: 25px 10px;
+    }
   }
 }
 
@@ -55,18 +183,17 @@
 }
 
 //////////////////
-//
 // END：ブランド表示
-//
 //////////////////
 
 
 
+
+
 //////////////////
-//
 // どこポイ
-//
 //////////////////
+
 #dokopoiCartBody{
   padding-top: 15px !important;
   padding-bottom: 30px !important;
@@ -111,8 +238,7 @@
 .order-history tr{
   padding: 15px !important;
 }
+
 //////////////////
-//
 // END：どこポイ
-//
 //////////////////
