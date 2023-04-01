@@ -54,8 +54,8 @@
     height: 20px;
   }
   .add_header_nav__cartdot {
-    top: 17px;
-    right: 6px;
+    top: 11px;
+    right: 7px;
   }
   .add_header_btm {
     border-top: 1px solid #DDDDDD;
@@ -241,6 +241,14 @@
   color: #dddddd;
 }
 
+#dokopoiCartBody a {
+  text-decoration: underline;
+}
+
+#dokopoiSubmit {
+  text-decoration: none !important;
+}
+
 #dokopoiSubmit,
 #dokopoiReset {
   max-width: 200px !important;
@@ -263,5 +271,19 @@
 
 .order-history tr {
   padding: 15px !important;
+}
+
+.add_cart_total_usepoint {
+  margin-bottom: 0;
+}
+
+.add_cart_total_usepoint span {
+  text-decoration: line-through;
+}
+
+.socialplus-association-button-wrapper {
+  background: #393e42;
+  color: white;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=add.css.map */

@@ -55,6 +55,11 @@
                         <td class="Text--alignRight">{{ order.total_price | money }}</td>
                       </tr>
                     {%- endfor -%}
+                    <style>
+                      .TableWrapper .Heading tr td{
+                        display: table-cell;
+                      }
+                    </style>
                     </tbody>
                   </table>
                 </div>

@@ -70,7 +70,8 @@
                 {%- endfor -%}
               {%- endif -%}
 
-              <p class="Cart__Total Heading u-h6">{{ 'cart.general.total' | t }}: <span>{{ cart.total_price | money_with_currency }}</span></p>
+              <p id="add_cart_total" class="add_cart_total_usepoint Cart__Total Heading u-h6">{{ 'cart.general.total' | t }}: <span>{{ cart.total_price | money_with_currency }}</span></p>
+              <p id="add_cart_total_usepoint" class="Cart__Total Heading u-h6">{{ 'cart.general.total' | t }}: <span>{{ cart.total_price | money_with_currency }}</span></p>
 
               {% comment %}
               {%- if shipping_and_taxes_notice != blank -%}

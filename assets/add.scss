@@ -72,8 +72,8 @@
       }
 
       &__cartdot{
-        top: 17px;
-        right: 6px;
+        top: 11px;
+        right: 7px;
       }
     }
 
@@ -273,6 +273,13 @@
   color: #dddddd;
 }
 
+#dokopoiCartBody a{
+  text-decoration: underline;
+}
+#dokopoiSubmit{
+  text-decoration: none !important;
+}
+
 #dokopoiSubmit,
 #dokopoiReset{
   max-width: 200px !important;
@@ -297,6 +304,30 @@
   padding: 15px !important;
 }
 
+.add_cart_total_usepoint{
+  margin-bottom: 0;
+
+  & span{
+    text-decoration:line-through;
+  }
+}
+
 //////////////////
 // END：どこポイ
+//////////////////
+
+
+
+
+
+//////////////////
+// CRM PLUS
+//////////////////
+.socialplus-association-button-wrapper{
+  background: #393e42;
+  color: white;
+  border-radius: 5px;
+}
+//////////////////
+// END：CRM PLUS
 //////////////////
