@@ -28,10 +28,9 @@ $(function(){
 
   // どこポイのポイント入力時、価格を引く
   {
-    const $point = $('#dokopoiPointField');
-    console.log($point);
-    $point.click(function(){
-      console.log($point);
+    console.log(1);
+    $('#dokopoiSubmit').on("click", '#dokopoiSubmit', function(){
+      console.log(1);
     });
     
   }
